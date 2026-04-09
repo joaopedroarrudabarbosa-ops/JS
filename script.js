@@ -11,6 +11,7 @@
 // undefined - valor indefinido 
 // -typeof-  e uma variavel na frente traz o tipo da variavel (string, number etc)
 
-let nome = prompt("Qual é o seu nome?");
-let idade = prompt("Qual sua idade?");
-alert(`Seu nome é ${nome} e sua idade é ${idade}`);
+// let nome = prompt("Qual é o seu nome?");
+// let idade = prompt("Qual sua idade?");
+// alert(`Seu nome é ${nome} e sua idade é ${idade}`); // - usa-se `´ (crase)
+// e ${} para colocar uma variavel dentro de uma mensagem (`${}´)
