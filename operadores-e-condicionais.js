@@ -13,46 +13,39 @@
 // alert(`O seu IMC é ${imc.toFixed(2)}.`); - .toFixed(2) limite o resultado em duas casas decimais 
 
 
-let numero1 = Number(prompt("Digite um numero para somar"))
-let numero2 = Number(prompt("Digite outro numero para somar"))
-let operacao = prompt("Qual operação você quer fazer +, -, /, *")
+let numero1 = Number(prompt("Digite um numero para somar"));
+let numero2 = Number(prompt("Digite outro numero para somar"));
+let operacao = prompt("Qual operação você quer fazer +, -, /, *");
 let resultado;
 
-if(numero1 === null || numero2 === null || operacao === null){
-    alert("Não foi possivel efetuar a operação")
-}
-
-if(numero1 === "" || numero2 === "" || operacao === ""){
-    alert("Preencha corretamente")
-}
-if(isNaN(numero1) || isNaN(numero2)){
-    alert("Digite m numero")
-}
-
-if(operacao === "+") {
-    resultado = numero1 + numero2;
-    alert(`A resultado de ${numero1} + ${numero2} é ${resultado}.`)
-}
-
-else if(operacao === "-") 
-{
-    alert(`A resultado de ${numero1} + ${numero2} é ${resultado}.`)
-}
-
-else if(operacao === "/") 
-{
-    if(numero2 !== 0 )  alert(`A resultado de ${numero1} + ${numero2} é ${resultado}.`)
-}
-    else{
-    alert("Não pode dividir por zero.")
-}
-
-else if(operacao === "*")
-{    
-    alert(`A resultado de ${numero1} + ${numero2} é ${resultado}.`)
-}
-else{
-    alert("Não vai rolar.")
+// Validação de entrada
+if (isNaN(numero1) || isNaN(numero2)) {
+    alert("Por favor, digite números válidos.");
+} else {
+    // Processamento das operações
+    if (operacao === "+") {
+        resultado = numero1 + numero2;
+        alert(`O resultado de ${numero1} + ${numero2} é ${resultado}.`);
+    } 
+    else if (operacao === "-") {
+        resultado = numero1 - numero2;
+        alert(`O resultado de ${numero1} - ${numero2} é ${resultado}.`);
+    } 
+    else if (operacao === "*") {
+        resultado = numero1 * numero2;
+        alert(`O resultado de ${numero1} * ${numero2} é ${resultado}.`);
+    } 
+    else if (operacao === "/") {
+        if (numero2 !== 0) {
+            resultado = numero1 / numero2;
+            alert(`O resultado de ${numero1} / ${numero2} é ${resultado}.`);
+        } else {
+            alert("Não é possível dividir por zero.");
+        }
+    } 
+    else {
+        alert("Operação inválida! Escolha entre +, -, * ou /.");
+    }
 }
  
 // parseFloat
