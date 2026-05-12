@@ -47,7 +47,6 @@ if (isNaN(numero1) || isNaN(numero2)) {
         alert("Operação inválida! Escolha entre +, -, * ou /.");
     }
 }
- 
 // parseFloat
 // Number
 
