@@ -24,3 +24,5 @@ let moedaAtual = prompt("Digite a moeda atual (BRL): ")
 let moedaDestino = prompt("Digite a moeda de destino (USD, EUR ou GBP):")
 
 alert(converterMoeda(valor, moedaAtual, moedaDestino))
+
+// FEITO
